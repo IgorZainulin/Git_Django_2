@@ -1,7 +1,7 @@
 {% endblock title %}
 
 {% block content %}
-   <h1>Все товары</h1>
+   <h1>Все товары:</h1>
    <h3>{{ time_now|date:'M d Y' }}</h3>
    <!-- Если в переменной next_sale будет None,
    то выведется указанный в фильтре текст -->
@@ -11,11 +11,11 @@
    {% if products %}
        <table>
            <tr>
-               <td>Название</td>
-               <td>Описание</td>
-               <td>Категория</td>
-               <td>Цена</td>
-               <td>Количество</td>
+               <td>НАЗВАНИЕ</td>
+               <td>ОПИСАНИЕ</td>
+               <td>КАТЕГОРИЯ</td>
+               <td>ЦЕНА</td>
+               <td>КОЛЛ-ВО</td>
            </tr>
 
            {% for product in products %}
@@ -30,6 +30,6 @@
 
        </table>
    {% else %}
-       <h2>Товаров нет!</h2>
+       <h2>Товаров нет!!</h2>
    {% endif %}
 {% endblock content %}
